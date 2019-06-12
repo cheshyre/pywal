@@ -52,6 +52,13 @@ def colors_to_dict(colors, img):
     }
 
 
+def set_secondary_colors(colors):
+    for i in range(9, 15):
+        colors[i] = util.lighten_color(colors[i], 0.2)
+    colors[8] = util.lighten_color(colors[8], 0.2)
+    return colors
+
+
 def generic_adjust(colors, light):
     """Generic color adjustment for themers."""
     if light:
@@ -144,7 +151,9 @@ def get(img, light=False, backend="wal", cache_dir=CACHE_DIR, sat=""):
         logging.info("Using %s backend.", backend)
         backend = sys.modules["pywal.backends.%s" % backend]
         colors = getattr(backend, "get")(img, light)
-        colors = colors_to_dict(saturate_colors(colors, sat), img)
+        colors = colors_to_dict(
+            set_secondary_colors(saturate_colors(colors, sat)), img
+        )
 
         util.save_file_json(colors, cache_file)
         logging.info("Generation complete.")
