@@ -54,8 +54,7 @@ def colors_to_dict(colors, img):
 
 def set_secondary_colors(colors):
     for i in range(9, 15):
-        colors[i] = util.lighten_color(colors[i], 0.2)
-    colors[8] = util.lighten_color(colors[8], 0.2)
+        colors[i] = util.lighten_color(colors[i], 0.25)
     return colors
 
 
