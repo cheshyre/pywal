@@ -38,7 +38,7 @@ def list_out():
 def list_themes(dark=True):
     """List all installed theme files."""
     dark = "dark" if dark else "light"
-    themes = os.scandir(os.path.join(MODULE_DIR, "colorschemes", dark))
+    themes = os.scandir(os.path.join(MODULE_DIR, "colorschemes16", dark))
     return [t for t in themes if os.path.isfile(t.path)]
 
 
@@ -97,7 +97,7 @@ def file(input_file, light=False):
     bri = "light" if light else "dark"
 
     user_theme_file = os.path.join(CONF_DIR, "colorschemes", bri, theme_name)
-    theme_file = os.path.join(MODULE_DIR, "colorschemes", bri, theme_name)
+    theme_file = os.path.join(MODULE_DIR, "colorschemes16", bri, theme_name)
 
     # Find the theme file.
     if input_file in ("random", "random_dark"):
