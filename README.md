@@ -2,15 +2,16 @@
 <p align="center">Generate and change color-schemes on the fly.</p>
 
 <p align="center">
-<a href="https://discord.gg/fK3RhsD"><img src="https://img.shields.io/discord/440354555197128704.svg"></a>
-<a href="https://travis-ci.org/dylanaraps/pywal"><img src="https://travis-ci.org/dylanaraps/pywal.svg?branch=master"></a>
 <a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
-<a href="https://pypi.python.org/pypi/pywal/"><img src="https://img.shields.io/pypi/v/pywal.svg"></a>
-<a href="https://www.patreon.com/dyla"><img src="https://img.shields.io/badge/donate-patreon-yellow.svg"></a>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7QNJNKS3WYVS"><img src="https://img.shields.io/badge/donate-paypal-green.svg"></a>
 </p>
 
-<img src="https://i.imgur.com/HhK3LDv.jpg" alt="img" align="right" width="400px">
+***This is a fork (of a fork).***
+
+It adds (experimental) support for bold colors when generating from an image (original code from [cheshyre/pywal](https://github.com/cheshyre/pywal)).
+
+I've additionally converted the builtin-themes adding bold colors. This was done using a script, so let me know if you encounter any weird colors.
+
+---
 
 Pywal is a tool that generates a color palette from the dominant colors in an image. It then applies the colors system-wide and on-the-fly in all of your favourite programs.
 
