@@ -19,6 +19,6 @@ install:
     - pip install flake8 pylint
 
 script:
-    - flake8 pywal tests setup.py
-    - pylint pywal tests setup.py
+    - flake8 pywal_16 tests setup.py
+    - pylint pywal_16 tests setup.py
     - python setup.py test

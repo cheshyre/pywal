@@ -1,5 +1,5 @@
 dist/*
-pywal.egg-info/*
+pywal_16.egg-info/*
 *.pyc
 subprocess
 re

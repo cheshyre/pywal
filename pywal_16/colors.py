@@ -20,7 +20,7 @@ def list_backends():
 
 
 def colors_to_dict(colors, img):
-    """Convert list of colors to pywal format."""
+    """Convert list of colors to pywal_16 format."""
     return {
         "wallpaper": img,
         "alpha": util.Color.alpha_num,
@@ -142,13 +142,13 @@ def get(img, light=False, backend="wal", cache_dir=CACHE_DIR, sat=""):
         # Dynamically import the backend we want to use.
         # This keeps the dependencies "optional".
         try:
-            __import__("pywal.backends.%s" % backend)
+            __import__("pywal_16.backends.%s" % backend)
         except ImportError:
-            __import__("pywal.backends.wal")
+            __import__("pywal_16.backends.wal")
             backend = "wal"
 
         logging.info("Using %s backend.", backend)
-        backend = sys.modules["pywal.backends.%s" % backend]
+        backend = sys.modules["pywal_16.backends.%s" % backend]
         colors = getattr(backend, "get")(img, light)
         colors = colors_to_dict(
             set_secondary_colors(saturate_colors(colors, sat)), img

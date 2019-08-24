@@ -2,8 +2,8 @@
 import unittest
 import platform
 
-from pywal import sequences
-from pywal import util
+from pywal_16 import sequences
+from pywal_16 import util
 
 # Import colors.
 COLORS = util.read_file_json("tests/test_files/test_file.json")

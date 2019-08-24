@@ -49,12 +49,12 @@ def get_args():
                      const="list_themes", nargs="?")
 
     arg.add_argument("--iterative", action="store_true",
-                     help="When pywal is given a directory as input and this "
+                     help="When pywal_16 is given a directory as input and this "
                           "flag is used: Go through the images in order "
                           "instead of shuffled.")
 
     arg.add_argument("--recursive", action="store_true",
-                     help="When pywal is given a directory as input and this "
+                     help="When pywal_16 is given a directory as input and this "
                           "flag is used: Search for images recursively in "
                           "subdirectories instead of the root only.")
 

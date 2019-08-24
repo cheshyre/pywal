@@ -1,9 +1,9 @@
-include pywal/templates/*
-include pywal/backends/*
-include pywal/scripts/*
-include pywal/colorschemes16/*
-include pywal/colorschemes16/light/*
-include pywal/colorschemes16/dark/*
+include pywal_16/templates/*
+include pywal_16/backends/*
+include pywal_16/scripts/*
+include pywal_16/colorschemes16/*
+include pywal_16/colorschemes16/light/*
+include pywal_16/colorschemes16/dark/*
 include tests/*
 include tests/test_files/*
 include .pylintrc

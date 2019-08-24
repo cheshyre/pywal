@@ -1,7 +1,7 @@
 """Test image functions."""
 import unittest
 
-from pywal import image
+from pywal_16 import image
 
 
 class TestImage(unittest.TestCase):

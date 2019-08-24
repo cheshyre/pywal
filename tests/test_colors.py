@@ -1,7 +1,7 @@
 """Test imagemagick functions."""
 import unittest
 
-from pywal import colors
+from pywal_16 import colors
 
 
 class TestGenColors(unittest.TestCase):
