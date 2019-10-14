@@ -1,11 +1,12 @@
 """wal - setup.py"""
+import sys
 import setuptools
 
 try:
     import pywal_16
 except ImportError:
     print("error: pywal_16 requires Python 3.5 or greater.")
-    quit(1)
+    sys.exit(1)
 
 LONG_DESC = open('README.md').read()
 VERSION = pywal_16.__version__
